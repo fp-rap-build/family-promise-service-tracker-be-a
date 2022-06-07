@@ -51,6 +51,7 @@ router.get('/total', (req, res, next) => {
  *      401:
  *        $ref: '#/components/responses/UnauthorizedError'
  */
+
 router.get('/families', (req, res, next) => {
   DS.getFamilies()
     .then((response) => {
